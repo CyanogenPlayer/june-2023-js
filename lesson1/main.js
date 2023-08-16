@@ -37,11 +37,11 @@ console.log(person);
 // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
 //   let a = 100; let b = '100'; let c = true;
 let a = 100;
-console.log(a);
+console.log(typeof a);
 let b = '100';
-console.log(b);
+console.log(typeof b);
 let c = true;
-console.log(c);
+console.log(typeof c);
 
 // Додаткове для тих хто цікавився prompt`oм
 // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками. та вивести в консоль
