@@ -31,6 +31,9 @@ let firstName = 'Nazarii';
 let middleName = 'Lyubomyr';
 let lastName = 'Ryhus';
 
+let person = `${firstName} ${middleName} ${lastName}`;
+console.log(person);
+
 // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
 //   let a = 100; let b = '100'; let c = true;
 let a = 100;
@@ -48,5 +51,5 @@ console.log(userName);
 let userFatherName = prompt('Введіть по-батькові');
 console.log(userFatherName);
 
-let userYearOfBirth = prompt('Введіть рік народження');
+let userYearOfBirth = +prompt('Введіть рік народження');
 console.log(userYearOfBirth);
