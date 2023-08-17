@@ -1,55 +1,93 @@
-// - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
-// Вивести кожну змінну за допомогою: console.log
-let s1 = 'hello';
-let s2 = 'owu';
-let s3 = 'com';
-let s4 = 'ua';
-console.log(`${s1}, ${s2}.${s3}.${s4}`)
+// // let a1;
+// // a1 = 'hello okten';
+//
+// let a1 = 'hello okten';
+// console.log(a1);
+//
+// let b1 = 123;
+// console.log(b1);
+//
+// // Константи
+// // const c1 = 'asaasssa';
+// // Не змінюється
+// // c1 = 111;
+//
+// var v1 = 'hello';
+// console.log(v1);
+//
+// {
+//     var a = 'asd';
+//     let b = 'aaa';
+// }
+//
+// console.log(a);
+// console.log(b);
 
-let n1 = 1;
-console.log(n1);
-let n2 = 10;
-console.log(n2);
-let n3 = -999;
-console.log(n3);
-let n4 = 123;
-console.log(n4);
-const PI = 3.14;
-console.log(PI);
-let n5 = 2.7;
-console.log(n5);
-let n6 = 16;
-console.log(n6);
+// let s1 = 'hello';
+// let s2 = 'okten';
+// let s3 = '!!!';
+//
+// // let res = s1 + ' ' + s2 + s3;
+// let res = `${s1} ${s2}${s3}`;
+//
+// console.log(res);
 
-let b1 = true;
-console.log(b1);
-let b2 = false;
-console.log(b2);
+// let n1 = 10;
+// let n2 = 3;
+//
+// let nRes = n1 % n2; // + - * / %
+// console.log(nRes);
 
-// - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person (Не об'єкт, просто за допомоги конкатенації)
-let firstName = 'Nazarii';
-let middleName = 'Lyubomyr';
-let lastName = 'Ryhus';
+// let b1 = 5;
+// let b2 = 10;
+//
+// let bRes = 5 > 10;
+// console.log(bRes);
 
-let person = `${firstName} ${middleName} ${lastName}`;
-console.log(person);
+// console.log(typeof 'name');
 
-// - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
-//   let a = 100; let b = '100'; let c = true;
-let a = 100;
-console.log(typeof a);
-let b = '100';
-console.log(typeof b);
-let c = true;
-console.log(typeof c);
+// let s = 'hello';
+// let n = 100500;
+// let b = true
+//
+// console.log(s + n);
+// console.log(s + n + b);
 
-// Додаткове для тих хто цікавився prompt`oм
-// - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками. та вивести в консоль
-let userName = prompt('Введіть ім\'я');
-console.log(userName);
+// console.log(10 + 20 + 'xxx' + 20);
 
-let userFatherName = prompt('Введіть по-батькові');
-console.log(userFatherName);
+// console.log('123');
+// console.log(+'123');
+// console.log(+'123aaa');
+// console.log(parseInt('123aaa'))
+// console.log(123.12);
 
-let userYearOfBirth = +prompt('Введіть рік народження');
-console.log(userYearOfBirth);
+// console.log(!!'');
+// console.log(!!' ');
+// console.log(!!0);
+// console.log(!!undefined);
+// console.log(!!NaN);
+// console.log(!!false);
+// console.log(!!null);
+
+// let nameUser = prompt('enter your name');
+// console.log(nameUser);
+//
+// if (!nameUser) {
+//     console.log('aaaaaaaaaa');
+// }
+
+// let arr = [111, 'ok', true];
+// console.log(arr);
+// console.log(arr[0]);
+// console.log(arr[2]);
+
+let user = {
+    name: 'vasya',
+    age: 13,
+    status: true
+};
+
+console.log(user);
+console.log(user.age);
+console.log(user.name);
+console.log(user.status);
