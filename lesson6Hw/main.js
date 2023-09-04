@@ -144,10 +144,10 @@ for (const cardSuitItem of cardSuit) {
 console.log(deck);
 
 console.log(deck.find(value => value.suit === 'spade' && value.value === 'A'));
-console.log(deck.find(value => value.value === '6'));
-console.log(deck.find(value => value.color === 'red'));
-console.log(deck.find(value => value.suit === 'diamond'));
-console.log(deck.find(value => value.suit === 'clubs' && ['9', '10', 'J', 'Q', 'K', 'A'].includes(value.value)));
+console.log(deck.filter(value => value.value === '6'));
+console.log(deck.filter(value => value.color === 'red'));
+console.log(deck.filter(value => value.suit === 'diamond'));
+console.log(deck.filter(value => value.suit === 'clubs' && ['9', '10', 'J', 'Q', 'K', 'A'].includes(value.value)));
 
 // =========================
 //     Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт
