@@ -10,6 +10,7 @@ div.style.backgroundColor = 'darkcyan';
 div.style.color = 'orange';
 div.style.fontSize = '20px';
 document.body.appendChild(div);
+document.body.appendChild(div.cloneNode(true));
 
 // - Є масив:
 // ['Main','Products','About us','Contacts']
