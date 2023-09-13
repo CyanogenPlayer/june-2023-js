@@ -1,0 +1,4 @@
+let some = document.querySelectorAll(".item-grid-card__title, .item-grid-music-preview__author, .audio-player__wave > audio");
+arr = [];
+for (let i = 0; i < some.length; i +=3) {arr.push({title: some[i+1].innerText, author: some[i+2].innerText, audio: some[i].src})}
+arr;
