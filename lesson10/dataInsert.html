@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<form action="" name="f1">
+	<input type="text" name="title">
+	<input type="number" name="price">
+	<button>save</button>
+</form>
+<script>
+    localStorage.setItem('products', JSON.stringify([]));
+
+	let f1 = document.forms.f1;
+    f1.onsubmit = function (e) {
+        e.preventDefault();
+        let product = {
+            title: this.title.value,
+	        price: this.price.value
+	    };
+        console.log(product);
+        let products = JSON.parse(localStorage.getItem('products'));
+        products.push(product);
+        localStorage.setItem('products', JSON.stringify(products));
+    };
+
+    // let arrayWithData = JSON.parse(localStorage.getItem('array')) || [];
+    // console.log(arrayWithData);
+</script>
+</body>
+</html>
