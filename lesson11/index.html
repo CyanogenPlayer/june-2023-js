@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<script>
+    // console.log(1);
+    //
+    // setTimeout(() => {
+    //     console.log('async');
+    // }, 1000);
+    //
+    // console.log(2);
+    //
+    // setTimeout(() => {
+    //     console.log('async2');
+    // }, 1000);
+    //
+    // setTimeout(() => {
+    //     console.log('async3');
+    // }, 500);
+    //
+    // console.log(3);
+
+    // let x = 0;
+	//
+    // setTimeout(() => {
+    //     x = 100;
+    // }, 1000);
+	//
+    // console.log(x);
+
+    // setInterval(() => {
+    //     console.log('hello');
+    // }, 1000);
+
+    fetch('https://dummyjson.com/products')
+        .then(res => res.json())
+        // .then(productsResponse => {
+        //     console.log(productsResponse);
+        //     let {products} = productsResponse;
+        // })
+	    .then(({products}) => {
+        console.log(products);
+        });
+</script>
+</body>
+</html>
